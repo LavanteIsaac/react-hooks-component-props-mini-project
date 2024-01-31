@@ -1,5 +1,3 @@
-import React from "react";
-
 const Article = ({ title, date, preview}) => {
     const formattedDate = date || "January 1, 1970";
 

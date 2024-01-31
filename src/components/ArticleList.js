@@ -1,15 +1,23 @@
-import React from "react";
-import blogData from "../data/blog";
+import Article from "./Article"
 
-const ArticleList = () => {
-    const articleLists = blogData.posts.map((post) => (
-        <article 
-            key={post.id}
-            title={post.title}
-            date={post.date}
-            preview={post.preview}
+function ArticleList({posts}) {
+   const renderPost = posts.map(({ id, title, date, preview, }) => (
+   <Article 
+       key={id}
+       title={title}
+       date={date}
+    preview={preview}
         />
-    ));
-    return <main>{articleLists}</main>;
+   ))
+    return (
+          <main>
+              { renderPost }
+        </main>
+    )
+    
 };
+
 export default ArticleList;
+
+
+
