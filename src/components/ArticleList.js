@@ -6,7 +6,7 @@ function ArticleList({posts}) {
        key={id}
        title={title}
        date={date}
-    preview={preview}
+       preview={preview}
         />
    ))
     return (

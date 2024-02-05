@@ -7,7 +7,7 @@ import ArticleList from "./ArticleList";
 import blogData from "../data/blog";
 
 
-const {name, image, about, post} = blogData
+const {name, image, about, posts} = blogData
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <Header name={name} />
       <About image={image} about={about}/>
-      <ArticleList posts={post} />
+      <ArticleList posts={posts} />
     </div>
   );
 }
